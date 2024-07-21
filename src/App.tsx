@@ -1,7 +1,8 @@
+import Alert from "./components/Alert.tsx";
 import ListGroup from "./components/ListGroup.tsx";
 
 function App() {
-    let items = [
+    const items = [
         "New York",
         "Odesa",
         "Brasov",
@@ -11,7 +12,14 @@ function App() {
         console.log(item);
     }
 
-    return <div><ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem}/></div>
+    return <div>
+        <ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem}/>
+        <div className="alert alert-dark">
+            <Alert>
+                <span>ALERT!</span>
+            </Alert>
+        </div>
+    </div>
 }
 
 export default App;
