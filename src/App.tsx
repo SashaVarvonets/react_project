@@ -1,4 +1,5 @@
 import Alert from "./components/Alert.tsx";
+import Button from "./components/Button.tsx";
 import ListGroup from "./components/ListGroup.tsx";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
     return <div>
         <ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem}/>
+        <Button onClick={() => console.log("click")} color="secondary">Click</Button>
         <div className="alert alert-dark">
             <Alert>
                 <span>ALERT!</span>
