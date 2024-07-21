@@ -10,7 +10,7 @@ const Button = ({children, color = "primary", onClick}: ButtonProps) => {
     return (
         <button
             type="button"
-            className={"btn btn-" + {color}}
+            className={"btn btn-" + color}
             onClick={onClick}
         >{children}</button>
     );
